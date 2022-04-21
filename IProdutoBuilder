@@ -1,0 +1,17 @@
+package Interface;
+
+import Produto.AcessorioProduto;
+import Produto.SistemaProduto;
+
+public interface IProdutoBuilder {
+
+	public void setTipoProduto(String tipoProduto);
+	public void setNomeProduto(String nomeProduto);
+	public void setDtFabProduto(String string);
+	public void setCodProduto(String codProduto);
+	public void setVoltProduto(Integer voltProduto);
+	public void setCorProduto(String cprProduto);
+	public void setSistemaProduto(SistemaProduto sistemaProduto);
+	public void setAcessorioProduto(AcessorioProduto acessorioProduto);
+	
+}
