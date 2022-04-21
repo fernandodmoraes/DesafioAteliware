@@ -1,0 +1,29 @@
+package Produto;
+
+import Interface.ProdutoBuilder;
+
+public class NovoProduto {
+
+	public static void main(String[] args) {
+	
+		SistemaProduto sistemaProduto = new SistemaProduto ("Windows 11 Pro","Intel Core I5","8GB", 256,"NVIDIA GeForce MX110", 15);
+		AcessorioProduto acessorioProduto = new AcessorioProduto ("NÂO", "SIM", "NÃO", "NÃO", "SIM");
+		
+		ItenProduto itenProduto = new ItenProduto ("Notebook","IdealPad S145J","21/04/2022","145142145214555",110,"Prata", acessorioProduto,sistemaProduto);
+				
+		ProdutoBuilder proBuilder = new ProdutoBuilder();
+		proBuilder.setTipoProduto("");
+		proBuilder.setNomeProduto(" ");
+		proBuilder.setDtFabProduto("");
+		proBuilder.setCodProduto("");
+		proBuilder.setVoltProduto(null);		
+		proBuilder.setCorProduto("");
+		proBuilder.setAcessorioProduto(acessorioProduto);
+		proBuilder.setSistemaProduto(sistemaProduto);
+		ItenProduto pro = proBuilder.gera();
+		
+		System.out.println(proBuilder);
+		
+	}
+
+}
