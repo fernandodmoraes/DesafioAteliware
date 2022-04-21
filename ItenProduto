@@ -1,0 +1,94 @@
+package Produto;
+
+
+public class ItenProduto {
+	
+	private String  tipoProduto;
+	private String  nomeProduto;
+	private String  dtFabProduto; 
+	private String  codProduto;
+	private Integer voltProduto;
+	private String  corProduto;
+	
+	private AcessorioProduto acessorioProduto;
+	private SistemaProduto sistemaProduto;
+	
+	public ItenProduto(String tipoProduto, String nomeProduto, String string, String codProduto,
+			Integer voltProduto, String corProduto, AcessorioProduto acessorioProduto, SistemaProduto sistemaProduto) {
+		
+		this.tipoProduto = tipoProduto;
+		this.nomeProduto = nomeProduto;
+		this.dtFabProduto = string;
+		this.codProduto = codProduto;
+		this.voltProduto = voltProduto;
+		this.corProduto = corProduto;
+		this.acessorioProduto = acessorioProduto;
+		this.sistemaProduto = sistemaProduto;
+		
+	}
+
+	public String getTipoProduto() {
+		return tipoProduto;
+	}
+
+	public void setTipoProduto(String tipoProduto) {
+		this.tipoProduto = tipoProduto;
+	}
+
+	public String getNomeProduto() {
+		return nomeProduto;
+	}
+
+	public void setNomeProduto(String nomeProduto) {
+		this.nomeProduto = nomeProduto;
+	}
+
+	public String getDtFabProduto() {
+		return dtFabProduto;
+	}
+
+	public void setDtFabProduto(String dtFabProduto) {
+		this.dtFabProduto = dtFabProduto;
+	}
+
+	public String getCodProduto() {
+		return codProduto;
+	}
+
+	public void setCodProduto(String codProduto) {
+		this.codProduto = codProduto;
+	}
+
+	public Integer getVoltProduto() {
+		return voltProduto;
+	}
+
+	public void setVoltProduto(Integer voltProduto) {
+		this.voltProduto = voltProduto;
+	}
+
+	public String getCorProduto() {
+		return corProduto;
+	}
+
+	public void setCorProduto(String corProduto) {
+		this.corProduto = corProduto;
+	}
+
+	public AcessorioProduto getAcessorioProduto() {
+		return acessorioProduto;
+	}
+
+	public void setAcessoriosProduto(AcessorioProduto acessorioProduto) {
+		this.acessorioProduto = acessorioProduto;
+	}
+
+	public SistemaProduto getSistemaProduto() {
+		return sistemaProduto;
+	}
+
+	public void setSistemaProduto(SistemaProduto sistemaProduto) {
+		this.sistemaProduto = sistemaProduto;
+	}
+	
+}
