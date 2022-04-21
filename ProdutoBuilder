@@ -1,0 +1,52 @@
+package Interface;
+
+import Produto.AcessorioProduto;
+import Produto.ItenProduto;
+import Produto.SistemaProduto;
+
+public class ProdutoBuilder implements IProdutoBuilder {
+
+	private String  tipoProduto;
+	private String  nomeProduto;
+	private String  dtFabProduto; 
+	private String  codProduto;
+	private Integer voltProduto;
+	private String  corProduto;
+	
+	private AcessorioProduto acessoriosProduto;
+	private SistemaProduto sistemaProduto;
+	
+	public void setTipoProduto(String tipoProduto) {
+		this.tipoProduto = tipoProduto;
+	}
+	public void setNomeProduto(String nomeProduto) {
+		this.nomeProduto = nomeProduto;
+	}
+	public void setDtFabProduto(String dtFabProduto) {
+		this.dtFabProduto = dtFabProduto;
+	}
+	public void setCodProduto(String codProduto) {
+		this.codProduto = codProduto;
+	}
+	public void setVoltProduto(Integer voltProduto) {
+		this.voltProduto = voltProduto;
+	}
+	public void setCorProduto(String corProduto) {
+		this.corProduto = corProduto;
+	}
+	public void setAcessoriosProduto(AcessorioProduto acessoriosProduto) {
+		this.acessoriosProduto = acessoriosProduto;
+	}
+	public void setSistemaProduto(SistemaProduto sistemaProduto) {
+		this.sistemaProduto = sistemaProduto;
+	}
+	@Override
+	public void setAcessorioProduto(AcessorioProduto acessorioProduto) {
+		this.acessoriosProduto = acessorioProduto;
+	}
+	public ItenProduto gera() {
+		return null;
+	}
+	
+	
+}
